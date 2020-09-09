@@ -386,7 +386,7 @@
 				});
 
 				var user = $('#hello');
-				var varurl = "http://localhost:8080/api/getAllUsers";
+				var varurl = "http://ec2-54-247-71-245.eu-west-1.compute.amazonaws.com:5432/api/getAllUsers";
 				$.ajax({
 					type: 'GET',
 					url: varurl,
@@ -407,7 +407,7 @@
 	                $(this).find("option:selected").each(function(){
 	                    var id = $(this).attr("value");
 						
-                		var pre = "http://localhost:8080/api/getAllTaskByUserId/";
+                		var pre = "http://ec2-54-247-71-245.eu-west-1.compute.amazonaws.com:5432/api/getAllTaskByUserId/";
                 		var varurl = pre+id;
                 		$.ajax({
                 			type: 'GET',

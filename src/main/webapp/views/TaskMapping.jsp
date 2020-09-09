@@ -313,7 +313,7 @@ SimpleDateFormat ft = new SimpleDateFormat ("yyyy-MM-dd"); %>
 				var Task = $('#task');
 	            $.ajax({
 	                type:'GET',
-	                url:"http://localhost:8080/api/getAllTask",
+	                url:"http://ec2-54-247-71-245.eu-west-1.compute.amazonaws.com:5432/api/getAllTask",
 	                async:true,
 	                success:function(result){
 	                    var output = "<option selected disabled> -- Select -- </option>";
@@ -327,7 +327,7 @@ SimpleDateFormat ft = new SimpleDateFormat ("yyyy-MM-dd"); %>
 	            var user = $('#user');
 	            $.ajax({
 	                type:'GET',
-	                url:"http://localhost:8080/api/getAllUsers",
+	                url:"http://ec2-54-247-71-245.eu-west-1.compute.amazonaws.com:5432/api/getAllUsers",
 	                async:true,
 	                success:function(result){
 	                    var output = "<option selected disabled> -- Select -- </option>";

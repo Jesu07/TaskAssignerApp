@@ -142,7 +142,7 @@ String formattedDate = myDateObj.format(myFormatObj); %>
 				var notification = $('#notification');
 				
 				var user = $('#userid').val();
-				var pre = "http://localhost:8080/api/getAllNotificationsByUserId/";
+				var pre = "http://ec2-54-247-71-245.eu-west-1.compute.amazonaws.com:5432/api/getAllNotificationsByUserId/";
         		var varurl = pre+user;
         		$.ajax({
         			type: 'GET',
@@ -168,7 +168,7 @@ String formattedDate = myDateObj.format(myFormatObj); %>
         		$('#userNotifications1').on('click',function(){
         			var id = $('#ID1').val();
         			//alert(id);
-            		var pre  = "http://localhost:8080/api/update_is_viewed/";
+            		var pre  = "http://ec2-54-247-71-245.eu-west-1.compute.amazonaws.com:5432/api/update_is_viewed/";
     				var varurl = pre+id;
     				$.ajax({
             			type: 'POST',
@@ -182,7 +182,7 @@ String formattedDate = myDateObj.format(myFormatObj); %>
         		$('#userNotifications2').on('click',function(){
         			var id = $('#ID2').val();
 					//alert(id);
-            		var pre  = "http://localhost:8080/api/update_is_viewed/";
+            		var pre  = "http://ec2-54-247-71-245.eu-west-1.compute.amazonaws.com:5432/api/update_is_viewed/";
     				var varurl = pre+id;
     				$.ajax({
             			type: 'POST',
