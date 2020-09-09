@@ -68,7 +68,7 @@
 				//alert(user);
 
 				var avatar = $("#avatar");
-				var pre = "http://ec2-54-247-71-245.eu-west-1.compute.amazonaws.com:5432/api/getUserImageByUserID/";
+				var pre = "https://ec2-54-247-71-245.eu-west-1.compute.amazonaws.com:5432/api/getUserImageByUserID/";
 				var image_url = pre+user;
 				$.ajax({ 
 					type: 'GET',

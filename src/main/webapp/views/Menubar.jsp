@@ -103,7 +103,7 @@
 				//alert(userID);
 				
 				var admin = $("#adminNotifications");
-				var admin_notifications_url = "http://ec2-54-247-71-245.eu-west-1.compute.amazonaws.com:5432/api/getAdminNotificationsCount";
+				var admin_notifications_url = "https://ec2-54-247-71-245.eu-west-1.compute.amazonaws.com:5432/api/getAdminNotificationsCount";
 				$.ajax({ 
 					type: 'GET',
             		url: admin_notifications_url,
@@ -122,7 +122,7 @@
 				});
 
 				var user = $("#userNotifications");
-				var user_notifications_url = "http://ec2-54-247-71-245.eu-west-1.compute.amazonaws.com:5432/api/getUserNotificationsCount";
+				var user_notifications_url = "https://ec2-54-247-71-245.eu-west-1.compute.amazonaws.com:5432/api/getUserNotificationsCount";
 				$.ajax({ 
 					type: 'GET',
             		url: user_notifications_url,

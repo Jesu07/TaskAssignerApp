@@ -1254,7 +1254,7 @@
 				var designation = $('#designation');
 	            $.ajax({
 	                type:'GET',
-	                url:"http://ec2-54-247-71-245.eu-west-1.compute.amazonaws.com:5432/api/getAllDesignation",
+	                url:"https://ec2-54-247-71-245.eu-west-1.compute.amazonaws.com:5432/api/getAllDesignation",
 	                async:true,
 	                success:function(result){
 	                    var output = "<option selected disabled> -- Select -- </option>";
@@ -1268,7 +1268,7 @@
 				var blood = $('#blood_group');
 	            $.ajax({
 	                type:'GET',
-	                url:"http://ec2-54-247-71-245.eu-west-1.compute.amazonaws.com:5432/api/getAllBlood",
+	                url:"https://ec2-54-247-71-245.eu-west-1.compute.amazonaws.com:5432/api/getAllBlood",
 	                async:true,
 	                success:function(result){
 	                    var output = "<option selected disabled> -- Select -- </option>";
@@ -1282,7 +1282,7 @@
 	            var language = $('#mother_tongue');
 	            $.ajax({
 	                type:'GET',
-	                url:"http://ec2-54-247-71-245.eu-west-1.compute.amazonaws.com:5432/api/getAllLanguage",
+	                url:"https://ec2-54-247-71-245.eu-west-1.compute.amazonaws.com:5432/api/getAllLanguage",
 	                async:true,
 	                success:function(result){
 	                    var output = "<option selected disabled> -- Select -- </option>";
@@ -1296,7 +1296,7 @@
 	            var religion = $('#religion');
 	            $.ajax({
 	                type:'GET',
-	                url:"http://ec2-54-247-71-245.eu-west-1.compute.amazonaws.com:5432/api/getAllReligion",
+	                url:"https://ec2-54-247-71-245.eu-west-1.compute.amazonaws.com:5432/api/getAllReligion",
 	                async:true,
 	                success:function(result){
 	                    var output = "<option selected disabled> -- Select -- </option>";
@@ -1310,7 +1310,7 @@
 	            var comm = $('#comm_category');
 	            $.ajax({
 	                type:'GET',
-	                url:"http://ec2-54-247-71-245.eu-west-1.compute.amazonaws.com:5432/api/getAllCommunity",
+	                url:"https://ec2-54-247-71-245.eu-west-1.compute.amazonaws.com:5432/api/getAllCommunity",
 	                async:true,
 	                success:function(result){
 	                    var output = "<option selected disabled> -- Select -- </option>";
@@ -1324,7 +1324,7 @@
 	            var nation = $('#nation');
 	            $.ajax({
 					type:'GET',
-					url:"http://ec2-54-247-71-245.eu-west-1.compute.amazonaws.com:5432/api/getAllCountry",
+					url:"https://ec2-54-247-71-245.eu-west-1.compute.amazonaws.com:5432/api/getAllCountry",
 					async:true,
 					success:function(result){
 						var output = "<option selected disabled> -- Select -- </option>";
@@ -1338,7 +1338,7 @@
 	            var country = $('#country');
 	            $.ajax({
 					type:'GET',
-					url:"http://ec2-54-247-71-245.eu-west-1.compute.amazonaws.com:5432/api/getAllCountry",
+					url:"https://ec2-54-247-71-245.eu-west-1.compute.amazonaws.com:5432/api/getAllCountry",
 					async:true,
 					success:function(result){
 						var output = "<option selected disabled> -- Select -- </option>";
@@ -1353,7 +1353,7 @@
 	            $('#country').change(function(){
 	                $(this).find("option:selected").each(function(){
 	                    var id = $(this).attr("value");
-	                    var pre = "http://ec2-54-247-71-245.eu-west-1.compute.amazonaws.com:5432/api/getAllStateByCountryId/";
+	                    var pre = "https://ec2-54-247-71-245.eu-west-1.compute.amazonaws.com:5432/api/getAllStateByCountryId/";
 	                    var varurl = pre+id;
 	                    $.ajax({
 	                        type: 'GET',
@@ -1375,7 +1375,7 @@
 	                $(this).find("option:selected").each(function(){
 	                    var id1 = $('#country option:selected').val();
 	                    var id = $(this).attr("value");
-	                    var pre = "http://ec2-54-247-71-245.eu-west-1.compute.amazonaws.com:5432/api/getAllDistrictByStateId/";
+	                    var pre = "https://ec2-54-247-71-245.eu-west-1.compute.amazonaws.com:5432/api/getAllDistrictByStateId/";
 	                    var varurl = pre+id1+"/"+id;
 	                    $.ajax({
 	                        type: 'GET',
@@ -1395,7 +1395,7 @@
 	            var editcountry = $('#editCountry');
 	            $.ajax({
 					type:'GET',
-					url:"http://ec2-54-247-71-245.eu-west-1.compute.amazonaws.com:5432/api/getAllCountry",
+					url:"https://ec2-54-247-71-245.eu-west-1.compute.amazonaws.com:5432/api/getAllCountry",
 					async:true,
 					success:function(result){
 						var output = "<option selected disabled> -- Select -- </option>";
@@ -1409,7 +1409,7 @@
 	            var editstate = $('#editState');
 	            $.ajax({
 					type:'GET',
-					url:"http://ec2-54-247-71-245.eu-west-1.compute.amazonaws.com:5432/api/getAllState",
+					url:"https://ec2-54-247-71-245.eu-west-1.compute.amazonaws.com:5432/api/getAllState",
 					async:true,
 					success:function(result){
 						var output = "<option selected disabled> -- Select -- </option>";
@@ -1423,7 +1423,7 @@
 	            var editdistrict = $('#editDistrict');
 	            $.ajax({
 					type:'GET',
-					url:"http://ec2-54-247-71-245.eu-west-1.compute.amazonaws.com:5432/api/getAllDistrict",
+					url:"https://ec2-54-247-71-245.eu-west-1.compute.amazonaws.com:5432/api/getAllDistrict",
 					async:true,
 					success:function(result){
 						var output = "<option selected disabled> -- Select -- </option>";
